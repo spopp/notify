@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<div class="main-container">
+
+    <header class="header header-2">
+        <div class="branding">
+            <span class="title">Notify</span>
+        </div>
+        <div class="header-nav">
+            <a class="nav-link" [routerLink]="['/dashboard']">
+            <span class="nav-text"><clr-icon shape="home"></clr-icon></span></a>
+        </div>
+        <div class="header-nav header-actions settings">
+
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+
+
+
