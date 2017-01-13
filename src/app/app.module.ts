@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module'
 import { RouterModule, RouterLink } from '@angular/router';
+
+import { AlertsComponent } from './alerts/alerts.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 
@@ -18,9 +20,10 @@ import { MdCardModule } from '@angular2-material/card';
 
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
-    AppComponent, DashboardComponent, PageNotFoundComponent
+    AppComponent, DashboardComponent, PageNotFoundComponent, AlertsComponent
   ],
   imports: [ BrowserModule, FormsModule, HttpModule, RouterModule, AppRoutingModule,
     ClarityModule,
