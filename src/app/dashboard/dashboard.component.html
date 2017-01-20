@@ -1,15 +1,63 @@
-<md-card>
-  <md-card-title-group>
-      <img md-card-md-image src="assets/Materialdesign.png">
-      <md-card-title>Material Design</md-card-title>
-      <md-card-subtitle>Using material design with angular-clarity</md-card-subtitle>
-   </md-card-title-group>
 
-  <md-card-content>
-    <p>This application uses material design with angular-clarity.</p>
-    <p>Material design generates web interface components by drawing them graphically.
-    Angular-clarity contains a subset of Project Clarity controls, including a very good datagrid.  This project uses both methods to create a sample user interface.</p>
-  </md-card-content>
-</md-card>
+<clr-tabs>
+    <clr-tab-link [clrTabLinkId]="'dashboard1'" [clrTabLinkActive]="true">Material Design</clr-tab-link>
+    <clr-tab-link>Clarity-Angular</clr-tab-link>
+    <clr-tab-link>Cloud</clr-tab-link>
+
+    <!-- Material Design Tab Contents -->
+    <clr-tab-content [clrTabContentId]="'clarity1'" [clrTabContentActive]="true">
+      <md-card>
+        <md-card-title-group>
+            <img md-card-md-image src="assets/Materialdesign.png">
+            <md-card-title>Material Design</md-card-title>
+            <md-card-subtitle>Using material design with angular-clarity</md-card-subtitle>
+         </md-card-title-group>
+
+        <md-card-content>
+          <p>This application uses material design with angular-clarity.</p>
+          <p>Material design generates web interface components by drawing them graphically.
+          Angular-clarity contains a subset of Project Clarity controls, including a very good datagrid.  This project uses both methods to create a sample user interface.</p>
+        </md-card-content>
+      </md-card>
+    </clr-tab-content>
+
+    <!-- Clarity Tab Contents -->
+    <clr-tab-content>
+        <p>Content for Clarity tab.</p>
+        <clr-alert [clrAlertType]="'alert-success'" (clrAlertClosedChange)="onClose()">
+            <div class="alert-item">
+              <span class="alert-text">
+                  This alert indicates a success!
+              </span>
+            </div>
+        </clr-alert>
+        <p>Link Here is a <a href="javascript://">link</a> that can be accessed via clicking or through keyboard via tab.</p>
+        <clr-checkbox type="checkbox" id="checkbox_9" [(clrIndeterminate)]="indeterminateState">
+            Indeterminate Checkbox.
+        </clr-checkbox>
+
+        <clr-datagrid>
+          <clr-dg-column>Time (UTC)</clr-dg-column>
+          <clr-dg-column>Source</clr-dg-column>
+          <clr-dg-column>Severity</clr-dg-column>
+          <clr-dg-column>Message</clr-dg-column>
+
+          <clr-dg-row>
+              <clr-dg-cell></clr-dg-cell>
+              <clr-dg-cell></clr-dg-cell>
+              <clr-dg-cell></clr-dg-cell>
+              <clr-dg-cell></clr-dg-cell>
+          </clr-dg-row>
+          <clr-dg-footer>
+          </clr-dg-footer>
+        </clr-datagrid>
+
+    </clr-tab-content>
+
+    <!-- Cloud Tab Contents -->
+    <clr-tab-content>
+        <p>Content for Cloud tab.</p>
+    </clr-tab-content>
+</clr-tabs>
 
 <p></p>

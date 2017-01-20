@@ -3,9 +3,12 @@
 # compiled output
 /dist
 /tmp
+.npm/
+.config/
 
 # dependencies
 /node_modules
+
 
 # IDEs and editors
 /.idea
