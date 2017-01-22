@@ -32,6 +32,9 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 ## Docker development
 
+docker-compose build
+docker-compose up
 
-docker build -t notify_app .
-docker run -it --rm --name notify_app
+### Docker browser view
+
+Url: http://localhost:4200

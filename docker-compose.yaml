@@ -1,8 +1,14 @@
-client:
+version: '2'
+
+services:
+
+  client:
     build: .
+    environment:
+      NODE_ENV: development
     ports:
         - "4200:4200"
         - "49153:49153"
     volumes:
         - .:/usr/src/app
-    command: npm start
+    command: ng serve  --host 0.0.0.0 --port 4200 --live-reload-port 49153
