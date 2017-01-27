@@ -1,8 +1,8 @@
 # Notify Project
 
 [![CI Status]
-   (http://img.shields.io/travis/roamlrs/roamlrs.svg?style=flat)]
-   (https://travis-ci.org/roamlrs/roamlrs)
+   (http://img.shields.io/travis/spopp/notify.svg?style=flat)]
+   (https://travis-ci.org/spopp/notify)
 
 :zap:[Live Demo](https://spopp.github.io/notify)
 
