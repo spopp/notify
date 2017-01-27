@@ -4,6 +4,10 @@
    (http://img.shields.io/travis/spopp/notify.svg?style=flat)]
    (https://travis-ci.org/spopp/notify)
 
+[![Coverage Status](https://coveralls.io/repos/github/spopp/notify/badge.svg?branch=master)]
+   (https://coveralls.io/github/spopp/notify?branch=continuous_integration)
+
+
 :zap:[Live Demo](https://spopp.github.io/notify)
 
 
