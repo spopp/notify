@@ -1,5 +1,9 @@
 # Notify Project
 
+[![CI Status]
+   (http://img.shields.io/travis/roamlrs/roamlrs.svg?style=flat)]
+   (https://travis-ci.org/roamlrs/roamlrs)
+
 :zap:[Live Demo](https://spopp.github.io/notify)
 
 
@@ -35,9 +39,15 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 ## Docker development
 
-docker-compose build
-docker-compose up
+docker-compose build notify
+docker-compose run notify
 
 ### Docker browser view
 
 Url: http://localhost:4200
+
+## Docker Test
+
+docker-compose build test
+docker-compose run test
+
