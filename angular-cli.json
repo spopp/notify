@@ -27,8 +27,7 @@
         "../node_modules/@webcomponents/custom-elements/custom-elements.min.js",
         "../node_modules/clarity-icons/clarity-icons.min.js"
       ],
-      "environments": {
-        "source": "environments/environment.ts",
+      "environmentSource": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
