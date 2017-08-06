@@ -1,6 +1,4 @@
-FROM node:latest
-
-FROM node
+FROM node:8
 
 ENV HOME=/usr/src/app
 
@@ -8,7 +6,7 @@ RUN mkdir $HOME
 
 WORKDIR $HOME
 
-RUN npm install -g angular-cli@latest \
+RUN npm install -g @angular/cli@latest \
   && npm install \
   && rm -rf ~/.npm
 
